@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Azure 云计算-安全可信的智能云服务平台</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script  type="text/javascript" src="../js/my.js"></script>
+    <style>@font-face {
+        font-family: 'icomoon';
+        src:  url('fonts/icomoon.eot?ehjytq');
+        src:  url('fonts/icomoon.eot?ehjytq#iefix') format('embedded-opentype'),
+          url('fonts/icomoon.ttf?ehjytq') format('truetype'),
+          url('fonts/icomoon.woff?ehjytq') format('woff'),
+          url('fonts/icomoon.svg?ehjytq#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+      }</style>
+</head>
+
+<body>
+    <div class="nav"><!-- 导航栏 -->
+        <div class="topNav1">
+            <span class="topWords">
+                <a class="words1">Microsoft Azure <span class="smallWords">由</span><i class="topI">互联世纪</i><span
+                        class="smallWords">运营</span></a>
+            </span>
+            <span class="searchBox"><!-- 搜索框 -->
+                <form>
+                    <input class="search"  id="serch" type="search" onfocus="bc()" onblur="lk()" placeholder="请输入搜索关键词">
+                    <button id="search-ico"  onfocus="bc()" onblur="lk()"></button>
+                    <a>登录 Azure 门户</a>
+                </form>
+            </span>
+            <a><span class="redSpan">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp申请使用></span></a>
+        </div>
+        <div class="topNav2">
+            <div class="topNav3">
+            <ul class="ul1">
+                <li>
+                    <a>认识Azure</a>
+                    <ul class="meau1"><!-- 二级菜单 -->
+                        <li>
+                           <span class="level2Meau">什么是 Azure ？</span> 
+                           <span class="downWords"><h6 class="h61">了解 Azure 服务基础知识</h6></span>
+                        </li>
+                        <li>
+                            <span class="level2Meau">中国版 Azure （世纪互联运营） vs.全球版 Azure</span>
+                            <span class="downWords"><h6 class="h61">哪种公有云最适合你？</h6></span>
+                        </li>
+                        <li>
+                            <span class="level2Meau">Azure 可用服务</span>
+                            <span class="downWords"><h6 class="h61">Azure 中国可用服务列表</h6></sapn>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>产品</a>
+                    <ul class="meau2"><!-- 二级菜单 -->
+                        <li id="li1"><div class="meau2Span" id="meau2Span1">&nbsp&nbspAI<span id="AI1">></span></div>
+
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau1">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">认知服务</p>
+                                        <h6 class="h61">添加智能 API 功能以启用上下文交互</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="border-div">
+                                        <span>                                        
+                                            <p class="level2Meau">人脸识别</p>
+                                            <h6 class="h61">检测、识别、分析、组织和标记照片中的人脸</h6>
+                                        </span>
+
+
+                                        <span>
+                                            <p class="level2Meau">计算机视觉</p>
+                                            <h6 class="h61">从图像中提取可操作信息</h6>
+                                        </span>
+
+                                        <span>
+                                            <p class="level2Meau">内容审查器</p>
+                                            <h6 class="h61">计算机辅助内容审查器 API 以用于图像、文本和视频的人工审阅工具</h6>
+                                        </span>
+
+                                        <span>
+                                            <p class="level2Meau">文本分析</p>
+                                            <h6 class="h61">检测文本中的情绪、关键短语和语音</h6>
+                                        </span>
+
+                                        <span>
+                                            <p class="level2Meau">文本翻译</p>
+                                            <h6 class="h61">提供简单的 REST API 调用即可轻松进行实时文本翻译</h6>
+                                        </span>
+
+                                        <span>
+                                            <p class="level2Meau">语言理解</p>
+                                            <h6 class="h61">教会应用理解用户发出的命令</h6>
+                                        </span>
+
+                                        <span>
+                                            <p class="level2Meau">语音服务</p>
+                                            <h6 class="h61">将语音转换为文本，文本转换为自然语言</h6>
+                                        </span>
+
+                                        <span>
+                                            <p class="level2Meau">Metrics Advisor</p>
+                                            <h6 class="h61">主动监视指标和诊断问题的 AI 分析服务</h6>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Auzre 认知搜索</p>
+                                        <h6 class="h61">用于移动和 Web 应用开发的 AI 支持的云搜索服务</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">机器学习</p>
+                                        <h6 class="h61">构建和训练模型，并将其从云端部署到边缘</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure Databricks</p>
+                                        <h6 class="h61">基于 Apache Spark的简便快捷的协作方式分析服务</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li  id="li2">
+                            <div class="meau2Span">&nbsp&nbspAzure Stack <span id="AI2">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau2">
+                                <li>
+                                    <span>
+                                        <p claas="level2Meau">Azure Stack</p>
+                                        <h6 class="h61">Azure Stack 是 Azure的扩展 — 将云计算的敏捷性和创新性带入您的本地环境，实</br>
+                                            现唯一的混合云，从而允许您在任何地方构建和部署混合应用程序。 我们汇集了最</br>
+                                            佳的边缘和云，在您环境中的任何地方提供Azure服务。</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li  id="li3">
+                            <div class="meau2Span">&nbsp&nbsp安全性 <span id="AI3">></span></div>
+
+                                                    <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau3">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">密钥保管库</p>
+                                        <h6 class="h61">保护并保持控制密钥和机密</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure Active Directory</p>
+                                        <h6 class="h61">同步本地目录并启用单一登录</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">应用程序网关</p>
+                                        <h6 class="h61">在 Azure 中生成安全、可缩放且高度可用的 Web 前端</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure Web 应用程序防火墙</p>
+                                        <h6 class="h61">一种云原生 Web 应用程序防火墙 (WAF) 服务，为 Web 应用提供强大的保护</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">VPN 网关</p>
+                                        <h6 class="h61">创建安全的跨界连接</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">安全中心</p>
+                                        <h6 class="h61">跨混合云工作负荷统一安全管理并实现高级威胁防护</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 信息保护</p>
+                                        <h6 class="h61">随时随地更好地保护敏感信息</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure Active Directory 域服务</p>
+                                        <h6 class="h61">用于虚拟机和目录感知应用程序的域服务</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li4">
+                            <div class="meau2Span">&nbsp&nbsp标识 <span id="AI4">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau4">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure Active Directory</p>
+                                        <h6 class="h61">同步本地目录并启用单一登录</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure Active Directory B2C</p>
+                                        <h6 class="h61">云中的客户标识和访问管理</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">多重身份验证</p>
+                                        <h6 class="h61">提高数据和应用的安全性，而不给用户添麻烦</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 信息保护</p>
+                                        <h6 class="h61">随时随地更好地保护敏感信息</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure Active Directory 域服务</p>
+                                        <h6 class="h61">用于虚拟机和目录感知应用程序的域服务</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li  id="li5">
+                            <div class="meau2Span">&nbsp&nbsp存储 <span id="AI4">></span></div>
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau5">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">存储</p>
+                                        <h6 class="h61">持久的、高度可用的、高度可伸缩的云存储器</h6>
+                                    </span>
+                                </li>
+
+
+                                <li>
+                                    <div class="border-div">
+                                        <span>
+                                            <p class="level2Meau">Blob 存储</p>
+                                            <h6 class="h61">适用于非结构化数据的基于 REST 的对象存储</h6>
+                                        </span>
+                                        <span>
+                                            <p class="level2Meau">Azure Data Lake Storage</p>
+                                            <h6 class="h61">基于 Azure Blob 存储构建的高度可缩放的安全 Data Lake 功能</h6>
+                                        </span>
+                                        <span>
+                                            <p class="level2Meau">磁盘存储</p>
+                                            <h6 class="h61">支持虚拟机的永久性、安全磁盘选项</h6>
+                                        </span>
+                                        <span>
+                                            <p class="level2Meau">托管磁盘</p>
+                                            <h6 class="h61">用于 Azure 虚拟机的永久且安全的磁盘存储</h6>
+                                        </span>
+                                        <span>
+                                            <p class="level2Meau">队列存储</p>
+                                            <h6 class="h61">根据流量有效缩放应用程序</h6>
+                                        </span>
+                                        <span>
+                                            <p class="level2Meau">文件存储</p>
+                                            <h6 class="h61">使用标准 SMB 3.0 协议的文件共享</h6>
+                                        </span>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Data Box</p>
+                                        <h6 class="h61">用于向 Azure 的数据传输以及用于边缘计算的设备和解决方案</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+
+                        <li  id="li6">
+                            <div class="meau2Span">&nbsp&nbsp分析 <span id="AI4">></span></div>
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau6">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">SQL 数据仓库</p>
+                                        <h6 class="h61">弹性数据仓库即服务，具有企业级功能</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">HDInsight</p>
+                                        <h6 class="h61">设置云 Hadoop、Spark、R Server、HBase 和 Storm 群集</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">流分析</p>
+                                        <h6 class="h61">实时数据流式处理，可处理来自数百万台 IoT 设备的数据</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Power BI Embedded</p>
+                                        <h6 class="h61">在应用程序中嵌入完整交互式的可视化数据</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 分析服务</p>
+                                        <h6 class="h61">企业级分析引擎即服务</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">事件中心</p>
+                                        <h6 class="h61">从数百万个设备中接收遥测</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">数据工厂</p>
+                                        <h6 class="h61">轻松进行企业级规模混合数据集成</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 数据资源管理器</p>
+                                        <h6 class="h61">快速且高度可缩放的数据探索服务</h6>
+                                    </span>
+                                </li>
+                            </uL>
+                        </li>
+
+
+
+                        <li  id="li7">
+                            <div class="meau2Span">&nbsp&nbsp管理工具 <span id="AI5">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau7">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 门户</p>
+                                        <h6 class="h61">在单个统一的控制台中生成、管理和监视 Azure 产品</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 顾问</p>
+                                        <h6 class="h61">个性化 Azure 最佳实践推荐引擎</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">自动化</p>
+                                        <h6 class="h61">使用流程自动化来简化云管理</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">备份</p>
+                                        <h6 class="h61">简单可靠的服务器云备份</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">站点恢复</p>
+                                        <h6 class="h61">安排私有云的保护和恢复</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">计划程序</p>
+                                        <h6 class="h61">根据简单或复杂的定期计划运行作业</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 监控器</p>
+                                        <h6 class="h61">高精度、实时监控所有Azure资源的数据</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 服务运行状况</p>
+                                        <h6 class="h61">在受 Azure 服务问题影响时获取个性化指导和支持</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">流量管理器</p>
+                                        <h6 class="h61">发送传入流量，以实现高性能和高可用性</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">网络观察程序</p>
+                                        <h6 class="h61">网络性能监视和诊断解决方案</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 策略</p>
+                                        <h6 class="h61">为 Azure 资源大规模实施公司管理和标准</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 资源管理器</p>
+                                        <h6 class="h61">简化应用资源的管理方式</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure Resource Graph</p>
+                                        <h6 class="h61">浏览所有云资源，更有效地管理云库存</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li8">
+                            <div class="meau2Span">&nbsp&nbsp集成 <span id="AI4">></span></div>
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau8">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">服务总线</p>
+                                        <h6 class="h61">在私有云环境和公有云环境中连接</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">API 管理</p>
+                                        <h6 class="h61">安全、大规模地向开发人员、合作伙伴和员工发布 API</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">事件网格</p>
+                                        <h6 class="h61">实现大规模的可靠事件交付</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li  id="li9">
+                            <div class="meau2Span">&nbsp&nbsp计算 <span id="AI4">></span></div>
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau9">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">虚拟机</p>
+                                        <h6 class="h61">在几秒钟内预配好 Windows 和 Linux 虚拟机</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">虚拟机规模集</p>
+                                        <h6 class="h61">管理并扩展到数千台 Linux 和 Windows 虚拟机</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">应用服务</p>
+                                        <h6 class="h61">快速创建适用于 Web 和移动的强大云应用</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">批处理</p>
+                                        <h6 class="h61">云规模的作业计划和计算管理</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">Service Fabric</p>
+                                        <h6 class="h61">在 Windows 或 Linux 上开发微服务和安排容器</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">云服务</p>
+                                        <h6 class="h61">创建高度可用且可无限缩放的云应用程序和 API</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">Azure Functions</p>
+                                        <h6 class="h61">使用无服务器代码处理事件</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">Azure Kubernetes 服务(AKS)</p>
+                                        <h6 class="h61">简化Kubernetes的部署，管理和操作</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">Azure 专用主机</p>
+                                        <h6 class="h61">用于托管适用于 Windows 和 Linux 的 Azure VM 的专用物理服务器</h6>
+                                    </span>
+                                </li> <li>
+                                    <span>
+                                        <p class="level2meau">Azure Spring Cloud</p>
+                                        <h6 class="h61">联合 VMware 共同构建和运营的完全托管的 Spring Cloud 服务</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li10">
+                            <div class="meau2Span">&nbsp&nbsp联网 <span id="AI4">></span></div>
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau10">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">CDN 内容分发网络</p>
+                                        <h6 class="h61">广泛的覆盖可确保安全、可靠的内容交付</h6>
+                                    </span>
+                                </li>                                
+                                <li>
+                                    <span>
+                                        <p class="level2meau">ExpressRoute</p>
+                                        <h6 class="h61">Azure 专用网络光纤连接</h6>
+                                    </span>
+                                </li>                                
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure DNS</p>
+                                        <h6 class="h61">在 Azure DNS 中托管 DNS 域</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">虚拟网络</p>
+                                        <h6 class="h61">设置专用网络，可以选择连接到本地数据中心</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">流量管理器</p>
+                                        <h6 class="h61">发送传入流量，以实现高性能和高可用性</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">负载均衡器</p>
+                                        <h6 class="h61">可让你的应用程序提高可用性和网络性能</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">VPN 网关</p>
+                                        <h6 class="h61">创建安全的跨界连接</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">应用程序网关</p>
+                                        <h6 class="h61">在 Azure 中生成安全、可缩放且高度可用的 Web 前端</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">网络观察程序</p>
+                                        <h6 class="h61">网络性能监视和诊断解决方案</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure 防火墙</p>
+                                        <h6 class="h61">云和本地网络安全，用于保护 Azure 虚拟网络资源</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure Web 应用程序防火墙</p>
+                                        <h6 class="h61">一种云原生 Web 应用程序防火墙 (WAF) 服务，为 Web 应用提供强大的保护</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure 虚拟 WAN</p>
+                                        <h6 class="h61">简单统一的全球连接与安全性</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure Bastion</p>
+                                        <h6 class="h61">到虚拟机的专用且完全托管的 RDP 和 SSH 访问</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure 专用链接</p>
+                                        <h6 class="h61">改进了 Azure 服务资源的安全性和路由</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li  id="li11">
+                            <div class="meau2Span">&nbsp&nbsp媒体 <span id="AI4">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau11">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">媒体服务</p>
+                                        <h6 class="h61">大规模编码、存储和流式传输视频和音频</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li  id="li12">
+                            <div class="meau2Span">&nbsp&nbsp迁移 <span id="AI4">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau12">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">站点恢复</p>
+                                        <h6 class="h61">安排私有云的保护和恢复</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure 数据库迁移服务</p>
+                                        <h6 class="h61">简化本地数据库向云的迁移</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li13">
+                            <div class="meau2Span">&nbsp&nbsp容器 <span id="AI4">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau13">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Service Fabric</p>
+                                        <h6 class="h61">在 Windows 或 Linux 上开发微服务和安排容器</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">容器注册表</p>
+                                        <h6 class="h61">将 Docker 专用注册表作为一流的 Azure 资源进行管理</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">应用服务</p>
+                                        <h6 class="h61">快速创建适用于 Web 和移动的强大云应用</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">批处理</p>
+                                        <h6 class="h61">云规模的作业计划和计算管理</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure Kubernetes 服务(AKS)</p>
+                                        <h6 class="h61">简化Kubernetes的部署，管理和操作</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">容器实例</p>
+                                        <h6 class="h61">无需管理服务器，即可在 Azure 上轻松运行容器</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li14">
+                            <div class="meau2Span">&nbsp&nbsp数据库 <span id="AI3">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau14">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">SQL 数据库</p>
+                                        <h6 class="h61">托管关系 SQL 数据库即服务</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">SQL 数据仓库</p>
+                                        <h6 class="h61">弹性数据仓库即服务，具有企业级功能</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">SQL Server Stretch Database</p>
+                                        <h6 class="h61">将本地 SQL Server 数据库动态拉伸到 Azure</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure Cosmos DB</p>
+                                        <h6 class="h61">任何规模的分布式多模型数据库服务</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">用于 Redis 的 Azure 缓存</p>
+                                        <h6 class="h61">具有高吞吐量、低延迟的数据访问的强大应用程序</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure Database for PostgreSQL</p>
+                                        <h6 class="h61">面向应用开发人员的托管 PostgreSQL 数据库服务</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure Database for MySQL</p>
+                                        <h6 class="h61">面向应用开发人员的托管 MySQL 数据库服务</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure Database for MariaDB</p>
+                                        <h6 class="h61">可供企业使用的完全托管的社区 MariaDB</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">数据工厂</p>
+                                        <h6 class="h61">轻松进行企业级规模混合数据集成</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure 数据库迁移服务</p>
+                                        <h6 class="h61">简化本地数据库向云的迁移</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure SQL Edge</p>
+                                        <h6 class="h61">在 Azure Platform 中以专用方式使用服务</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li15">
+                            <div class="meau2Span">&nbsp&nbsp网站 <span id="AI4">></span></div>
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau15">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">应用服务</p>
+                                        <h6 class="h61">快速创建适用于 Web 和移动的强大云应用</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Web 应用</p>
+                                        <h6 class="h61">了解如何使用 Azure 服务创建 Web Apps</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">通知中心</p>
+                                        <h6 class="h61">从任何后端向任何平台发送推送通知</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">API 管理</p>
+                                        <h6 class="h61">安全、大规模地向开发人员、合作伙伴和员工发布 API</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">CDN 内容分发网络</p>
+                                        <h6 class="h61">广泛的覆盖可确保安全、可靠的内容交付</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure SignalR 服务</p>
+                                        <h6 class="h61">轻松添加实时 Web 功能</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li16">
+                            <div class="meau2Span">&nbsp&nbsp物联网 <span id="AI3">></span></div>
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau16">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure IoT 中心</p>
+                                        <h6 class="h61">连接、监视并控制数十亿 IoT 资产</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure IoT 边缘</p>
+                                        <h6 class="h61">将云智能和分析扩展到边缘设备</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">事件中心</p>
+                                        <h6 class="h61">从数百万个设备中接收遥测</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">事件网格</p>
+                                        <h6 class="h61">实现大规模的可靠事件交付</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">流分析</p>
+                                        <h6 class="h61">实时数据流式处理，可处理来自数百万台 IoT 设备的数据</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">逻辑应用</p>
+                                        <h6 class="h61">快速生成功能强大的集成解决方案</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">通知中心</p>
+                                        <h6 class="h61">从任何后端向任何平台发送推送通知</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure Cosmos DB</p>
+                                        <h6 class="h61">任何规模的分布式多模型数据库服务</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">API 管理</p>
+                                        <h6 class="h61">安全、大规模地向开发人员、合作伙伴和员工发布 API</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2meau">Azure 时序见解</p>
+                                        <h6 class="h61">探索和分析 IoT 设备的时序数据</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li17">
+                            <div class="meau2Span">&nbsp&nbsp移动 <span id="AI4">></span></div>
+                            
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau17">
+                                <li>
+                                    <p class="level2meau">应用服务</p>
+                                    <h6 class="h61">快速创建适用于 Web 和移动的强大云应用</h6>
+                                </li>
+                                <li>
+                                    <div class="border-div">
+                                        <span>
+                                            <p class="level2meau">Web 应用</p>
+                                            <h6 class="h61">快速创建并部署可缩放的关键任务型 Web 应用</h6>
+                                        </span>                                        
+                                        <span>
+                                            <p class="level2meau">移动应用</p>
+                                            <h6 class="h61">构建和承载任何移动应用的后端</h6>
+                                        </span>                                        
+                                        <span>
+                                            <p class="level2meau">通知中心</p>
+                                            <h6 class="h61">从任何后端向任何平台发送推送通知</h6>
+                                        </span>                                        
+                                        <span>
+                                            <p class="level2meau">API 应用</p>
+                                            <h6 class="h61">轻松生成和使用云 API</h6>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li  id="li18">
+                            <div class="meau2Span">&nbsp&nbsp开发人员工具 <span id="AI6">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="level3meau18">
+                                <li>
+                                    <span>
+                                        <p class="level2meau">应用程序配置</p>
+                                        <h6 class="h61">用于应用程序配置的快速、可缩放的参数存储</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><div  class="blankArea"></div></li>
+                    </ul>
+                </li>
+                <li><a>价格</a></li>
+                <li><a>解决方案</a></li>
+                <li>
+                    <a>案例与伙伴</a>
+                    <ul class="meau3" id="lastmeau3"><!-- 二级菜单 -->
+                        <li>
+                            <span>
+                                <p class="level2Meau">案列研究</p>
+                                <h6 class="h61">人们正在使用 Azure 做着令人惊叹的事，来听听他们的故事吧</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">寻找合作伙伴</p>
+                                <h6 class="h61">通过经验丰富的合作伙伴的帮助在云中启动并运行业务</h6>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="aSpan"><a id="lasta1">文档</a></span>
+                    <ul class="meau4">
+                        <li id="lastli1">
+                            <div class="meau4Div">&nbsp&nbsp技术文档 <span id="last1">></span></div>
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="lastmeau1">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">技术文档</p>
+                                        <h6 class="h61">了解如何使用 Azure 云服务构建和管理功能强大的应用程序；获取文档、示例代</br>
+                                        码、教程等</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="lastli2">
+                            <div class="meau4Div">&nbsp&nbsp购买 + 计费 <span id="last2">></span></div>
+
+
+                            <!-- 三级菜单 -->
+                            <ul class="meau3" id="lastmeau2">
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">中国区 Azure 购买指南</p>
+                                        <h6 class="h61">了解不同渠道端到端的购买流程，及详细的指导说明</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 全球采购指南</p>
+                                        <h6 class="h61">为考虑使用 Azure 海外服务的中国用户提供购买流程概述</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">中国区 Azure 计费文档</p>
+                                        <h6 class="h61">了解中国区 Azure 订阅申请、账户管理、充值付款、帐单解读、发票索取等流程信息</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">中国区企业协议客户 Azure 计费文档</p>
+                                        <h6 class="h61">帮助签署高级在线服务协议的企业客户，全面了解 Azure 使用过程中的账户和计费管理</h6>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <p class="level2Meau">Azure 中国云用户迁移指南</p>
+                                        <h6 class="h61">本指南用于指导 Azure 中国云用户安全、高效地在中国的多个区域间进行端到端的资源迁移</h6>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li><a>博客</a></li>
+                <li><a>培训</a></li>
+                <li>
+                    <a>支持</a>
+                    <ul class="meau3" id="meau5">
+                        <li>
+                            <span>
+                                <p class="level2Meau">联系我们</p>
+                                <h6 class="h61">在线申请，微信，论坛，总之有各种方式联系到我们</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">支持计划</p>
+                                <h6 class="h61">看看 Auzre 究竟提供了哪些专业技能来提高你的工作效率</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">服务仪盘表</p>
+                                <h6 class="h61">Azure 服务仪报告</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">法律信息</p>
+                                <h6 class="h61">Azure 服务运营的相关法律信息</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">信任中心</p>
+                                <h6 class="h61">解答您对数据隐私和安全的忧虑， 方便查看购买和使用 Azure 的相关规定</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">Azure 知识产权保护计划</p>
+                                <h6 class="h61">针对知识产权（IP) 风险提供业界首创的全方位保护计划</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">ICP 备案</p>
+                                <h6 class="h61">看看购买 Azure 服务，如何免费获取 ICP 备案帮助</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">公安备案</p>
+                                <h6 class="h61">网站用户完成 ICP 备案后30日内需完成公安备案</h6>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <p class="level2Meau">常见问题</p>
+                                <h6 class="h61">有关 Azure 的常见问题的快速解答</h6>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Auzre市场</a></li>
+                <li><a>Azure Global/China</a></li>
+            </ul>
+        </div>
+        </div>
+
+
+
+            <!-- 轮播图 -->
+        <div class="sliders">
+            <ul class="slider-box" id="slider-ul">
+                <li>
+                    <div class="slider" id="slider1">
+                        <span class="blankInSlider"></span>
+                        <span class="leftSlider">
+                            <p class="upSlider">Auzre 认知服务Metrics Advisor预览版正式发布</p>
+                            <p class="downSlider">用AI主动监测指标和诊断问题</p>
+                            <span class="bluebox">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp了解更多 ></span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider" id="slider2">
+                        <span class="blankInSlider"></span>
+                        <span class="leftSlider">
+                            <p class="upSlider">适用于 Auzre 虚拟网络的 IPv6 正式发布</p>
+                            <p class="downSlider">&nbsp</p>
+                            <span class="bluebox">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp了解更多 ></span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider" id="slider3">
+                        <span class="blankInSlider"></span>
+                        <span class="leftSlider">
+                            <p class="upSlider">Azure 认知服务语言服务正式发布</p>
+                            <p class="downSlider">轻松将实时语音生成文本信息</p>
+                            <span class="bluebox">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp了解更多 ></span>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider" id="slider4">
+                        <span class="blankInSlider"></span>
+                        <span class="leftSlider">
+                            <p class="upSlider">Azure 应用程序网关 V2</p>
+                            <p class="downSlider">根据变化的流量负载模式，进行纵向扩展或缩进</p>
+                            <span class="bluebox">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp了解更多 ></span>
+                        </span> 
+                    </div>
+                </li>
+                <li>
+                    <div class="slider" id="slider5">
+                        <span class="blankInSlider"></span>
+                        <span class="leftSlider">
+                            <p class="upSlider">Azure 应用服务环境正式发布</p>
+                            <p class="downSlider">提供完全隔离的环境，大规模进行Azure应用服务</p>
+                            <span class="bluebox">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp了解更多 ></span>
+                        </span> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <!-- 导航按钮 -->
+            <div id="navDiv2">
+                <span class="jsSpan"><a class="navA"></a></span>
+                <span class="jsSpan"><a class="navA"></a></span>
+                <span class="jsSpan"><a class="navA"></a></span>
+                <span class="jsSpan"><a class="navA"></a></span>
+                <span class="jsSpan"><a class="navA"></a></span>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- 中间的盒子 -->
+    <div class="middleNav">
+        <div id="blankDiv1">&nbsp&nbsp&nbsp </div><!-- 空盒子 -->
+        <div class="middleDiv" id="middleDiv1">
+            <span class="blueWords">技术文档 ></span><!-- 蓝色的字 -->
+            <h4 class="middleH4">助你了解 Auzre ，提高工作效率，节</h4><!-- 黑色的字 -->
+            <h4 class="middleH4">省运营成本</h4>
+        </div>
+    <!-- 第二个 -->
+        <div class="middleDiv" id="middleDiv2">
+            <span class="blueWords">案例研究 ></span>
+            <h4 class="middleH4">了解目前正在使用Auzre解决方案的案</h4>
+            <h4 class="middleH4">例及分析</h4>
+        </div>
+    <!-- 第三个 -->    
+        <div class="middleDiv" id="middleDiv3">
+            <span class="blueWords">最新公告 ></span>
+            <h4 class="middleH4">Azure 虚拟 WAN 正式发布</h4>
+        </div>
+        <div id="blankDiv2">&nbsp&nbsp&nbsp </div>
+    </div>
+
+                                                    
+
+    <!-- 蓝色的盒子 -->
+    <div class="homepage">
+        <div class="homepage-left">
+            <div class="homepage-nav">
+                <ul>
+                    <li><a onfocus="show1()" onblur="hidden1">电子商务</a></li>
+                    <li><a onfocus="show2()" onblur="hidden2">数字媒体</a></li>
+                    <li><a onfocus="show3()" onblur="hidden3">备份和存档</a></li>
+                    <li><a onfocus="show4()" onblur="hidden4">大数据和分析</a></li>
+                    <li><a onfocus="show5()" onblur="hidden5">开发和测试</a></li>
+                    <li><a onfocus="show6()" onblur="hidden6">游戏</a></li>
+                    <li><a onfocus="show7()" onblur="hidden7">数字营销</a></li>
+                </ul>
+            </div>
+            <div class="homepage-right" id="homepage-1">
+                <span class="homepage-upwords">电子商务</span>
+                <span class="imgSpan" id="imgspan-1"></span>
+                <span class="homepage-downwords">
+                    无论你销售的是什么产品，你都需要同时满足客户和业务需求的安全、可缩放电子商务解决方案。通过自</br>
+                    定义产品和优惠吸引客户，安全快速地处理事务并专注于产品交付和客户服务。
+                </span>
+                <span class="homepage-button">了解更多 ></span>
+            </div>
+
+
+            <div class="homepage-right" id="homepage-2">
+                <span class="homepage-upwords">数字媒体</span>
+                <span class="imgSpan" id="imgspan-2"></span>
+                <span class="homepage-downwords">
+                    从优质视频内容的全球分发到指导员工和调用其参与度，再到联系客户和进行互动，均可使用媒体的力量</br>
+                    来实现企业转变。快速构建和部署视频解决方案、按需扩展，并随时随地使用任何设备交付视频。
+                </span>
+                <span class="homepage-button">了解更多 ></span>
+            </div>
+
+
+            <div class="homepage-right" id="homepage-3">
+                <span class="homepage-upwords">备份和存档</span>
+                <span class="imgSpan"></span>
+                <span class="homepage-downwords">
+                    保护驻留在任何位置的数据和应用程序，以避免成本高昂的业务中断或以满足符合性要求。安全地将本地 </br>
+                    份存储和数据存档解决方案扩展到云，从而降低成本和复杂性，同时实现高效率和可伸缩性。
+                </span>
+                <span class="homepage-button">了解更多 ></span>
+            </div>
+            
+            
+            <div class="homepage-right" id="homepage-4">
+                <span class="homepage-upwords">大数据和分析</span>
+                <span class="imgSpan"></span>
+                <span class="homepage-downwords">
+                    利用丰富、个性化的数字营销体验吸引全球的客户。快速构建和启动根据客户需求自动缩放的数字营销活</br>
+                    动。凭借强大的数据分析，分析并提高活动的成效。
+                </span>
+                <span class="homepage-button">了解更多 ></span>
+            </div>
+            
+            
+            <div class="homepage-right" id="homepage-5">
+                <span class="homepage-upwords">开发和测试</span>
+                <span class="imgSpan"></span>
+                <span class="homepage-downwords">
+                    利用丰富、个性化的数字营销体验吸引全球的客户。快速构建和启动根据客户需求自动缩放的数字营销活</br>
+                    动。凭借强大的数据分析，分析并提高活动的成效。
+                </span>
+                <span class="homepage-button">了解更多 ></span>
+            </div>
+            
+            
+            <div class="homepage-right" id="homepage-6">
+                <span class="homepage-upwords">游戏</span>
+                <span class="imgSpan"></span>
+                <span class="homepage-downwords">
+                    在此处构建全球游戏体验，通过安全的全球云和游戏专用服务创建和运行游戏 - 适用于各种规模和预算的</br>
+                    studio。
+                </span>
+                <span class="homepage-button">了解更多 ></span>
+            </div>
+            
+            
+            <div class="homepage-right" id="homepage-7">
+                <span class="homepage-upwords">数字营销</span>
+                <span class="imgSpan"></span>
+                <span class="homepage-downwords">
+                    利用丰富、个性化的数字营销体验吸引全球的客户。快速构建和启动根据客户需求自动缩放的数字营销活</br>
+                    动。凭借强大的数据分析，分析并提高活动的成效。
+                </span>
+                <span class="homepage-button">了解更多 ></span>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 云产品 -->
+    <div class="product">
+        <div class="product-div">
+            <div class="product-updiv">
+              <p> 为您推荐全能高效的 Azure 云产品 </p> 
+            </div>
+
+
+            <div class="products">
+
+
+                <div class="product-1">
+                    <p class="product-upwords">Azure Spring Cloud</p>
+                    <div class="product-img"><img src="../images/p1.jpg"></div>
+                    <div class="product-downwords"><p >联合 VMware 共同构建和运营的完全托管的 Spring</p></div>
+                    <div class="product-downwords1">Cloud 服务</div>  
+                    <p class="product-bluewords"><span> 0元/小时 起 ></span></p>
+                </div>
+
+
+                <div class="product-2">
+                    <p class="product-upwords">专用链介</p>
+                    <div class="product-img"><img src="../images/p2.png"></div>
+                    <div class="product-downwords"><p >改进了AZure服务资源的安全性和路由</p> </div>
+                    <p class="product-bluewords"><span> 0.102元/小时 起 &gt;</span></p>
+                </div> 
+
+
+                <div class="product-2">
+                    <p class="product-upwords">Azure SQL Edge</p>
+                    <div class="product-img"><img src="../images/p3.jpg"></div>
+                    <div class="product-downwords"><p >占用内存少，边缘优化的SQL数据库引擎，并内置AI</p> </div>
+                    <p class="product-bluewords"><span> 0.0822元/小时 起 ></span></p>
+                </div> 
+
+
+                <div class="product-2">
+                    <p class="product-upwords">Azure Databricks</p>
+                    <div class="product-img"><img src="../images/p4.jpg"></div>
+                    <div class="product-downwords"><p >基于Apache Spark的简便快捷的协作式分析服务</p> </div>
+                    <p class="product-bluewords"><span> 0.75元/小时 起 ></span></p>
+                </div>
+
+                <div class="product-1">
+                    <p class="product-upwords">虚拟机</p>
+                    <div class="product-img"><img src="../images/p5.jpg"></div>
+                    <div class="product-downwords"><p >在几秒钟内预配好Windows和Linux虚拟机</p> </div> 
+                    <p class="product-bluewords"><span> 0.11元/小时 起 ></span></p>
+                </div>
+                    
+                <div class="product-2">
+                    <p class="product-upwords">云服务</p>
+                    <div class="product-img"><img src="../images/p6.jpg"></div>
+                    <div class="product-downwords"><p >创建高度可用且可无限缩放的云应用程序和API</p></div>
+                    <p class="product-bluewords"><span> 0.11元/小时 起 ></span></p>
+                </div>    
+                            
+                <div class="product-2">
+                    <p class="product-upwords">存储</p>
+                    <div class="product-img"><img src="../images/p7.jpg"></div>
+                    <div class="product-downwords"><p >持久的、高度可用的、高度可伸缩的云存储器</p> </div> 
+                    <p class="product-bluewords"><span> 提供免费版 ></span></p>
+                </div>
+
+                <div class="product-2">
+                    <p class="product-upwords">Azure资源管理器</p>
+                    <div class="product-img"><img src="../images/p8.png"></div>
+                    <div class="product-downwords"><p >简化应用资源的管理方式</p> </div> 
+                    <p class="product-bluewords"><span> 免费 ></span></p>
+                </div>  
+                
+                
+            <div id="show-div">
+
+
+                <div class="product-3">
+                    <p class="product-upwords">应用程序配置</p>
+                    <div class="product-downwords"><img src="../images/p9.jpg"></div>
+                    <div class="product-downwords"><p >可大规模简化ETL的混合数据集成服务</p> </div> 
+                    <p class="product-bluewords"><span> 免费 ></span></p>
+                </div>
+            
+                <div class="product-4">
+                    <p class="product-upwords">Azure Bastion</p>
+                    <div class="product-img"><img src="../images/p10.jpg"></div>
+                    <div class="product-downwords"><p >到虚拟机的专用且完全托管的RDP和SSH访问</p></div>
+                    <p class="product-bluewords"><span> 免费 ></span></p>
+                </div>    
+                    
+                <div class="product-4">
+                    <p class="product-upwords">Azure Data Box</p>
+                    <div class="product-img"><img src="../images/p11.png"></div>
+                    <div class="product-downwords"><p >可在脱机状态下将数据更轻松的移入和移出</p> </div> 
+                    <p class="product-bluewords"><span> 63.6元/天 起 ></span></p>
+                </div>
+
+                <div class="product-4">
+                    <p class="product-upwords">AAD域服务</p>
+                    <div class="product-img"><img src="../images/p12.jpg"></div>
+                    <div class="product-downwords"><p >提供可放缩的高性能托管域服务</p> </div> 
+                    <p class="product-bluewords"><span> 4.07元/天 起 ></span></p>
+                </div> 
+
+
+            </div>
+            
+            
+            </div>
+
+            <div class="hiddendiv" id="hidden-div">
+                <h3 class="hidden-h3" onclick="hd()">全部 63 个云产品</h3>
+                <span class="hidden-button" onclick="hd()"><span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ico-div"></div>
+
+
+
+    <div class="white-div"></div>
+
+
+
+    
+    <div class="bottom-div">
+        <ul class="bottom-ul">
+            <li>未经备案的域名可能会被屏蔽</li>
+            <li>关于自查整改“翻墙”行为的通知!</li>
+            <li>互联网信息服务单位网络安全责任告知书</li>
+        </ul>
+    </div>
+
+
+    <div class="gray-div">
+        <div class="graydiv-img">
+
+            <div class="gray-blank"></div>
+
+                <h3 class="h31">关注我们</h3>
+                <div class="graydiv-img1">
+                    <img src="../images/g1.png">
+                    <h3 class="h32" id="h32-1">关注我们</h3>
+                </div>
+
+                <h3 class="h31">快速获取支持</h3>
+                <div class="graydiv-img1">
+                    <img src="../images/g2.png">
+                    <h3 class="h32" id="h32-2">快速获取支持</h3>
+                </div>
+        </div>
+
+
+        <div class="graydiv-1">
+           <h3 class="h31" id="graydiv-1-h3">Azure</h3> 
+
+           <ul>
+               <li><span>认识 Azure</span></li>
+               <li><span>产品</span></li>
+               <li><span>价格</span></li>
+               <li><span>优惠详情</span></li>
+               <li><span>中国区 Azure 购买指南</span></li>
+               <li><span>视频中心</span></li>
+               <li><span>通用解决方案</span></li>
+               <li><span>客户案例</span></li>
+               <li><span>技术文档</span></li>
+               <li><span>博客</span></li>
+           </ul>
+        </div>
+
+
+        <div class="graydiv-1">
+            <h3 class="h31" id="graydiv-2-h3">支持</h3> 
+
+            <ul>
+                <li><span>联系我们</span></li>
+                <li><span>支持计划</span></li>
+                <li><span>服务仪表盘</span></li>
+                <li><span>法律</span></li>
+                <li><span>服务级别协议</span></li>
+                <li><span>ICP 备案</span></li>
+                <li><span>公共备案</span></li>
+                <li><span>发票</span></li>
+                <li><span>常见问题</span></li>
+                <li><span>最新公告</span></li>
+            </ul>
+        </div>
+
+
+
+        <div class="graydiv-1">
+            <h3 class="h31" id="graydiv-3-h3-1">信任中心</h3> 
+
+            <ul>
+                <li><span>信任中心首页</span></li>
+                <li><span>安全性</span></li>
+                <li><span>隐私与管控</span></li>
+                <li><span>合规性</span></li>
+                <li><span>透明度</span></li>
+            </ul>
+
+
+            <h3 class="h31" id="graydiv-3-h3-2">账户</h3>
+
+            <ul>
+                <li><span>Azure 门户</span></li>
+                <li><span>充值，订阅与账单</span></li>
+                <li><span>企业门户网站</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="lastdiv">
+        <span id="lastspan1">简体中文</span>
+        <span>访问全球版 Azure 网站</span>
+        <span>沪ICP备13015306号-25</span>
+        <span>沪公网安备 31011502002224</span>
+        <span id="lastspan2">隐私</span>
+
+        <span></span>
+    </div>
+    
+</body>
+
+</html>

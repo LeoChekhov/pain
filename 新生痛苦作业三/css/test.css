@@ -1,0 +1,15 @@
+div {
+    text-align: right;
+}
+.serch{     
+    text-align:right;       
+    right: 10px;
+    top: 20px;
+    height: 30px;;
+    width: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.5s;              
+    background-color: rgb(175, 200, 223);
+    border: none;
+}
